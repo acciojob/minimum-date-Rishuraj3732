@@ -1,5 +1,12 @@
 function minDate(dates) {
   //write you code here
+	 let copy = [...dates];
+  
+  // Sort dates lexicographically because "YYYY/MM/DD" format works well for string comparison
+  copy.sort();
+  
+  // The first element is the earliest date
+  return copy[0];
 }
 
 // Do not change the code
